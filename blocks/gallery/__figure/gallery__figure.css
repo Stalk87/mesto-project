@@ -1,0 +1,7 @@
+.gallery__figure {
+    border-radius: 10px;
+    margin: 0 auto;    
+    max-width: 282px;
+    background-color: white;
+    overflow: hidden;
+}

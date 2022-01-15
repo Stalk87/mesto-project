@@ -1,0 +1,13 @@
+.profile__info {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:960px) {
+    .profile__info {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end;
+    }
+}
