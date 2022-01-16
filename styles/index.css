@@ -19,7 +19,7 @@
 @import url('../blocks/gallery/__photo/gallery__photo.css');
 @import url('../blocks/gallery/__photo-caption/gallery__photo-caption.css');
 @import url('../blocks/gallery/__caption/gallery__caption.css');
-@import url('../blocks/gallery/__like/gallery__like.css');
+@import url('../blocks/button-like/button-like.css');
 
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__text/footer__text.css');

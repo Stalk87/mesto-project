@@ -6,6 +6,13 @@
     min-width: 282px;
     min-height: 50px;
     padding: 0;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    transition: opacity .5s linear;
+    opacity: 0.6;
 }
 
 @media screen and (min-width:960px) {
