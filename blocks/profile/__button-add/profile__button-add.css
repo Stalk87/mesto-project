@@ -1,4 +1,4 @@
-.button-add {
+.profile__button-add {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
@@ -6,19 +6,24 @@
     min-width: 282px;
     min-height: 50px;
     padding: 0;
-    transition: opacity .5s linear;
+    transition: opacity .1s linear;
     cursor: pointer;
+    background-image: url(../../../images/plus-add.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
 }
 
-.button-add:hover {
-    transition: opacity .5s linear;
+.profile__button-add:hover {
+    transition: opacity .1s linear;
     opacity: 0.6;
 }
 
 @media screen and (min-width:960px) {
-    .button-add {
+    .profile__button-add {
         grid-column: 3/4;
         grid-row: 1/3;
         min-width: 150px;
+        background-size: 22px;
     }
 }
