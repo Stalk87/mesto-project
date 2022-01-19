@@ -1,17 +1,16 @@
 .popup__form-text {
     border: none;
     text-overflow: ellipsis;
-    padding: 0 0 12px 2px;
+    padding: 0 0 10px 0;
     font-size: 14px;
     line-height: 17px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     min-width: 238px;
     max-height: 14px;
-    vertical-align: bottom;
 }
 
-.popup__form-text:first-of-type {
-    margin-bottom: 30px;
+.popup__form-text:last-of-type {
+    margin-top: 32px;
 }
 
 .popup__form-text::placeholder {

@@ -6,6 +6,7 @@
     padding-bottom: 36px;
     margin: 0;
     color: white;
+    max-height: 14px;
 }
 
 @media screen and (min-width:960px) {
@@ -14,8 +15,8 @@
         line-height: 22px;
         grid-column: 2/3;
         grid-row: 2/3;
-        padding-top: 16px;
-        padding-bottom: 0;
+        padding: 0;
         text-align: start;
+        max-height: 18px;
     }
 }
