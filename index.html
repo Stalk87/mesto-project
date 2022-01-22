@@ -10,18 +10,18 @@
 <body>
     <div class="page">
         <header class="header">
-            <img class="header__logo" src="./images/logo.png" alt="логотип">            
+            <img class="header__logo" src="./images/logo.svg" alt="логотип">            
         </header>
         <main class="main">
             <div class="profile">
-                <img class="profile__avatar" src="./images/Drozdov.jpg" alt="фото профиля">
+                <img class="profile__avatar" src="./images/drozdov.jpg" alt="фото профиля">
                 <div class="profile__info">
                     <h1 class="profile__name">Николай Дроздов</h1>
-                    <button class="profile__button-edit">
+                    <button class="profile__button-edit" type="button">
                     </button>
                 </div>
                 <p class="profile__about">Учёный-зоолог и биогеограф</p>
-                <button class="profile__button-add">
+                <button class="profile__button-add" type="button">
                 </button>
             </div>
             <div class="gallery">
@@ -29,42 +29,42 @@
                     <img src="./images/drozdov_1.jpg" class="gallery__photo" alt="с_попугаем">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Попугайгайгайгайгай</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
                 <figure class="gallery__figure">
                     <img src="./images/drozdov_2.jpg" class="gallery__photo" alt="с_коалой">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Коала</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
                 <figure class="gallery__figure">
                     <img src="./images/drozdov_3.jpg" class="gallery__photo" alt="с_кенгуру">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Кенгуру</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
                 <figure class="gallery__figure">
                     <img src="./images/drozdov_4.jpg" class="gallery__photo" alt="с_змеей">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Змея</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
                 <figure class="gallery__figure">
                     <img src="./images/drozdov_5.jpeg" class="gallery__photo" alt="с_цветами">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Цветы</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
                 <figure class="gallery__figure">
                     <img src="./images/drozdov_6.jpeg" class="gallery__photo" alt="с_лемуром">
                     <figcaption class="gallery__photo-caption">
                         <p class="gallery__caption">Лемур</p>
-                        <button class="gallery__button-like"></button>
+                        <button class="gallery__button-like" type="button"></button>
                     </figcaption>
                 </figure>
             </div>
@@ -72,15 +72,15 @@
         <footer class="footer">
             <p class="footer__text">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup">
+        <div class="popup popup_opened">
             <div class="popup__container">
-                <button class="popup__button-close"></button>
+                <button class="popup__button-close" type="button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__form">
+                <form class="popup__form" name="popup">
                     <fieldset class="popup__fieldset">
-                        <input class="popup__form-text" type="text" placeholder="Николай Дроздов">
-                        <input class="popup__form-text" type="text" placeholder="Учёный-зоолог и биогеограф">
-                        <button class="popup__button-save">Сохранить</button>
+                        <input class="popup__form-text" type="text" placeholder="Николай Дроздов" name="name">
+                        <input class="popup__form-text" type="text" placeholder="Учёный-зоолог и биогеограф" name="about">
+                        <button class="popup__button-save" type="button">Сохранить</button>
                     </fieldset>
                 </form>
             </div>

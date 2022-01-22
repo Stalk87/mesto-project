@@ -8,7 +8,7 @@
     padding: 0;
     transition: opacity .1s linear;
     cursor: pointer;
-    background-image: url(../../../images/plus-add.png);
+    background-image: url(../../../images/plus-add.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 16px;

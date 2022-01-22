@@ -5,7 +5,7 @@
     padding: 0;
     height: 19px;
     width: 22px;
-    background-image: url(../../../images/like.png);
+    background-image: url(../../../images/like.svg);
     transition: opacity .1s linear;
 }
 
@@ -14,7 +14,7 @@
     opacity: 0.5;
 }
 
-.gallery__button-like:hover:active {
-    background-image: url(../../../images/like-black.png);
+.gallery__button-like:active {
+    background-image: url(../../../images/like-black.svg);
     opacity: 1;
 }

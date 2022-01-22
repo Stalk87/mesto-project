@@ -1,7 +1,8 @@
 .profile__info {
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
+    padding-top: 26px;
 }
 
 @media screen and (min-width:960px) {
@@ -9,5 +10,6 @@
         grid-column: 2/3;
         grid-row: 1/2;
         align-self: end;
+        padding-top: 0;
     }
 }

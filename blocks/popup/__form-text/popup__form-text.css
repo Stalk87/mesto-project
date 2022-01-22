@@ -22,3 +22,8 @@
         min-width: 358px;
     }
 }
+
+.popup__form-text:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
