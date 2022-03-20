@@ -1,20 +1,20 @@
 .gallery__button-like {
     cursor: pointer;
     border: none;
-    background-color: white;
-    padding: 0;
-    height: 19px;
     width: 22px;
+    height: 19px;
+    padding: 0;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px 19px;
+    align-self: center;
     background-image: url(../../../images/like.svg);
+    transition: .3s;
     transition: opacity .1s linear;
 }
 
 .gallery__button-like:hover {
     transition: opacity .1s linear;
     opacity: 0.5;
-}
-
-.gallery__button-like:active {
-    background-image: url(../../../images/like-black.svg);
-    opacity: 1;
 }

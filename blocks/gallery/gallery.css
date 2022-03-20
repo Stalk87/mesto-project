@@ -1,4 +1,4 @@
-.gallery {
+/* .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -20,4 +20,4 @@
         grid-template-columns: repeat(3, 3fr);
         max-width: 880px;
     }
-}
+} */

@@ -1,4 +1,7 @@
 .gallery__photo {
     width: 100%;
-    vertical-align: middle;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 282px;
+    cursor: pointer;
 }

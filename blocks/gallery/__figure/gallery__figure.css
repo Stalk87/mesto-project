@@ -1,6 +1,19 @@
 .gallery__figure {
-    border-radius: 10px;
-    margin: 0 auto;    
-    max-width: 282px;
-    overflow: hidden;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 17px ;
+}
+
+@media screen and (max-width: 1099px) {
+    .gallery__figure {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__figure {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }

@@ -26,66 +26,61 @@
             </div>
             <div class="gallery">
                 <figure class="gallery__figure">
-                    <img src="./images/drozdov_1.jpg" class="gallery__photo" alt="с_попугаем">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Попугайгайгайгайгай</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
+                  <template class="gallery__template">
+                    <div class="gallery__item">
+                      <button type="button" class="gallery__button-del"></button>
+                      <img src="" alt="" class="gallery__photo">
+                      <figcaption class="gallery__photo-caption">
+                        <p class="gallery__caption"></p>
+                        <button type="button" class="gallery__button-like"></button>
+                      </figcaption>
+                    </div>
+                  </template>
                 </figure>
-                <figure class="gallery__figure">
-                    <img src="./images/drozdov_2.jpg" class="gallery__photo" alt="с_коалой">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Коала</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
-                </figure>
-                <figure class="gallery__figure">
-                    <img src="./images/drozdov_3.jpg" class="gallery__photo" alt="с_кенгуру">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Кенгуру</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
-                </figure>
-                <figure class="gallery__figure">
-                    <img src="./images/drozdov_4.jpg" class="gallery__photo" alt="с_змеей">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Змея</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
-                </figure>
-                <figure class="gallery__figure">
-                    <img src="./images/drozdov_5.jpeg" class="gallery__photo" alt="с_цветами">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Цветы</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
-                </figure>
-                <figure class="gallery__figure">
-                    <img src="./images/drozdov_6.jpeg" class="gallery__photo" alt="с_лемуром">
-                    <figcaption class="gallery__photo-caption">
-                        <p class="gallery__caption">Лемур</p>
-                        <button class="gallery__button-like" type="button"></button>
-                    </figcaption>
-                </figure>
+              </div>
             </div>
         </main>
         <footer class="footer">
             <p class="footer__text">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup popup_opened">
+
+        <div class="popup popup_edit">
             <div class="popup__container">
                 <button class="popup__button-close" type="button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__form" name="popup">
+                <form class="popup__form" name="popup" action="#">
                     <fieldset class="popup__fieldset">
-                        <input class="popup__form-text" type="text" placeholder="Николай Дроздов" name="name">
-                        <input class="popup__form-text" type="text" placeholder="Учёный-зоолог и биогеограф" name="about">
+                        <input class="popup__form-text" type="text" id="name" placeholder="Николай Дроздов" name="name">
+                        <input class="popup__form-text" type="text" id="about" placeholder="Учёный-зоолог и биогеограф" name="about">
                         <button class="popup__button-save" type="submit">Сохранить</button>
                     </fieldset>
                 </form>
             </div>
         </div>
 
+        <div class="popup popup_add">
+            <div class="popup__container">
+                <button class="popup__button-close" type="button"></button>
+                <h2 class="popup__title">Новое место</h2>
+                <form class="popup__form" name="popup" action="#">
+                    <fieldset class="popup__fieldset">
+                        <input class="popup__form-text" type="text" placeholder="Название" name="name" id="place">
+                        <input class="popup__form-text" type="text" placeholder="Ссылка на картинку" name="about" id="link">
+                        <button class="popup__button-save" type="submit" value="Создать">Создать</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup_type_image">
+            <div class="popup__container popup__container_type_image">
+              <button type="button" class="popup__button-close"></button>
+              <img src="" alt="" class="popup__image">
+              <h2 class ="popup__image-capture">Подпись</h2>
+            </div>
+        </div>
     </div>
+    
+    <script src="./script.js"></script>
 </body>
 </html>

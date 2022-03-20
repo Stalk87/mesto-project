@@ -1,10 +1,11 @@
 .gallery__caption {
     font-weight: 900;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 27px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: #000;
     margin: 0;
-    max-width: 90%;
+    max-width: 80%;
 }

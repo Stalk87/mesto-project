@@ -3,7 +3,7 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
-    background-size: cover;
+    background-size: 20px 20px;
     cursor: pointer;
     transition: opacity .1s linear;
     position: absolute;
@@ -21,6 +21,7 @@
 
 @media screen and (min-width:960px) {
     .popup__button-close {
+        background-size: 32px 32px;
         width: 32px;
         height: 32px;
         right: -40px;

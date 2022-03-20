@@ -4,9 +4,9 @@
     line-height: 22px;
     padding-top: 25px;
     padding-bottom: 75px;
-    margin: 0 auto;
+    margin: 0 22px;
     text-align: start;
-    max-width: 238px;
+    min-width: 238px;
 }
 
 @media screen and (min-width:960px) {
