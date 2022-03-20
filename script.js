@@ -79,7 +79,7 @@ buttonClose.forEach(close =>
     })
 );
 
-//функция закрытия попапа на submit и enter
+//функция закрытия попапа на submit
 function closePopup(popupName) {
     popupName.classList.remove('popup_opened');
 }
@@ -100,12 +100,12 @@ function resetInput () {
     popupInputs.forEach(item => item.value = '');
 }
 
-//функционал попапа с фотографией
+//функция открытия попапа с фоткой
 function openPopupImage(imageLink, header) {
-    popupImage.setAttribute('src', imageLink);
-    popupImage.setAttribute('alt', header);
-    imageCapture.textContent = header;
-    openPopup(popupImage);
+    imagePopup.setAttribute('src', imageLink);//навесили атрибут
+    imagePopup.setAttribute('alt', header);//навесили еще один
+    imageCapture.textContent = header;//подпись фотки
+    openPopup(popupImage);//открыли попап
 }
 
 //создание карточек
@@ -120,16 +120,16 @@ function createCard(name, link) {
     cardImage.addEventListener('click', () => {
         openPopupImage(link, name);
     })
-    //функционал лайка
+    //функционал лайка для всех фоток
     cardElement.querySelector('.gallery__button-like').addEventListener('click', function (evt) {
         evt.target.classList.toggle('gallery__button-liked');
     })
     //удаление карточки
     cardElement.querySelector('.gallery__button-del').addEventListener('click', function (evt) {
-        evt.target.closest('.gallery__figure').remove();
+        evt.target.closest('.gallery__item').remove();
     })
 
-    return cardElement;
+    return cardElement;//возвращаем карточку
 }
 
 //добавление карточек из initialcards
@@ -137,8 +137,8 @@ initialCards.forEach(item => cardsContainer.append(createCard(item.name, item.li
 
 //добавление новой карточки через форму
 popupAdd.addEventListener('submit', evt => {
-    evt.preventDefault();
-    cardsContainer.prepend(createCard(nameSubmit.value, linkSubmit.value));
-    closePopup(popupAdd);
-    resetInput();
+    evt.preventDefault();//отменяем стандартное событие
+    cardsContainer.prepend(createCard(nameSubmit.value, linkSubmit.value));//создаем карточу, вставляем вперед списка
+    closePopup(popupAdd);//закрываем попап
+    resetInput();//очищаем поля
 })
