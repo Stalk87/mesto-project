@@ -1,14 +1,18 @@
-.footer {        
-    /* max-width: 880px; */
-    margin: auto;
-    padding: 48px 19px 36px;
-    min-width: 282px;
+.footer {
     background-color: black;
+    display: flex;
+    margin: 0 auto;
+    max-width: 880px;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width: 1099px) {
     .footer {
-        padding-top: 67px;
-        padding-bottom: 60px;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        max-width: 282px;
     }
 }

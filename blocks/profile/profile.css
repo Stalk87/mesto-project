@@ -4,14 +4,12 @@
     align-items: center;
     padding-top: 42px;
     padding-bottom: 36px;
-    min-width: 320px;
 }
 
 @media screen and (min-width:960px) {
     .profile {
         display: grid;
         max-width: 880px;
-        margin: auto;
         grid-template-columns: 150px auto 150px;
         grid-template-rows: repeat(2, 60px);
         position: relative;
