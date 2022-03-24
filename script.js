@@ -4,7 +4,7 @@ const popupAdd =  document.querySelector('.popup_add');
 const popupImage = document.querySelector('.popup_type_image');
 
 //содержимое форм и попапов
-const popupForm = document.querySelector('.popup__form');
+const profileForm = popupEdit.querySelector('.popup__form');
 const popupInputs = popupAdd.querySelectorAll('.popup__form-text');
 const nameInput = popupEdit.querySelector('#name');
 const aboutInput = popupEdit.querySelector('#about');
@@ -72,17 +72,18 @@ buttonAdd.addEventListener('click', () => {
 openPopup(popupAdd)
 });
 
-//закрытие попапа крестиком
-buttonClose.forEach(close =>
-    close.addEventListener('click', evt => {
-        evt.target.closest('.popup').classList.remove('popup_opened');
-    })
-);
-
 //функция закрытия попапа на submit
 function closePopup(popupName) {
     popupName.classList.remove('popup_opened');
 }
+
+//закрытие попапа крестиком
+buttonClose.forEach(close =>
+    close.addEventListener('click', () => {
+        const openedPopup = document.querySelector('.popup_opened');
+        closePopup(openedPopup);
+    })
+);
 
 //функция редактирования информации профиля
 function editProfileInfo(evt) {
@@ -93,7 +94,7 @@ function editProfileInfo(evt) {
 }
 
 //созданение информации из попапа редактирования
-popupForm.addEventListener('submit', editProfileInfo);
+profileForm.addEventListener('submit', editProfileInfo);
 
 //функция очистки полей
 function resetInput () {
